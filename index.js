@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateReadMe = require('./utils/generateMarkDown.js');
+const generateMarkDown = require('./utils/generateMarkDown.js');
 
 
 // TODO: Create an array of questions for user input
@@ -24,7 +24,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide information on how to use your project.?'
+        message: 'Provide information on how to use your project?'
     },
     {
         type: 'input',
@@ -66,9 +66,9 @@ function writeToFile(fileName, data) {
 }
 // TODO: Create a function to initialize app
 function init() {
-    .prompt(questions)
+    inquirer.prompt(questions)
     .then((answers) => {
-        writeToFile('README.md', generateMarkDown(answers))
+        writeToFile('README.md', generateMarkDown(answers));
     });
 }
 
