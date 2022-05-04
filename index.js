@@ -63,14 +63,14 @@ function writeToFile(fileName, data) {
         }
         console.log('README was created successfully.')
     });
-}
+};
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
         writeToFile('README.md', generateMarkDown(answers));
     });
-}
+};
 
 // Function call to initialize app
 init();
