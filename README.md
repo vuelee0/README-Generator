@@ -1,6 +1,6 @@
 
   ## Title
-  README Generator
+  README Generator 
   ![image](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
@@ -22,15 +22,13 @@
     Clone the repo. Run index in terminal with node. Answer the question prompts.
 
   ## Contribution
-  No guideline at this time
+  No guideline to contribute at this time.
 
   ## Testing
-  No testing at this time
+  No testing at this time.
   
   ## License
-  [![License: 
-      MIT]
-      (https://img.shields.io/badge/License-MIT-yellow.svg)]
+  [License: MIT]
       (https://opensource.org/licenses/MIT)
   
   ## Contact
