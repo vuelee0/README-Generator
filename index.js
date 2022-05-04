@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation',
+        name: 'install',
         message: 'What are the installation steps for the project?'
     },
     {
@@ -33,14 +33,14 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'testInstructions',
+        name: 'test',
         message: 'Enter testing instructions for testing your project?'
     },
     {
         type: 'list',
         name: 'license',
         message: 'Select your license from the choices below:',
-        choices: ['Apache', 'Berkeley', 'GPL', 'MIT', 'Mozilla', 'None']
+        choices: ['Apache', 'GPL', 'MIT', 'Mozilla', 'None']
     },
     {
         type: 'input',
@@ -56,10 +56,21 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            throw err;
+        }
+        console.log('README was created successfully.')
+    });
+}
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    .prompt(questions)
+    .then((answers) => {
+        writeToFile('README.md', generateMarkDown(answers))
+    });
+}
 
 // Function call to initialize app
 init();
