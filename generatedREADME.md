@@ -1,10 +1,9 @@
 
-  ## Title
-  README Generator
+  # Sample Readme
   ![image](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
-  Create a README file for your github project.
+  This is a sample readme file created through a readme generator
   
   ## Table of Contents
   * [Description](#description)
@@ -16,16 +15,16 @@
   * [Contact](#contact)
   
   ## Installation
-    No installation needed.
+    Clone the repo, use npm init and execute index with node
 
   ## Usage
-    Clone the repo. Run index in terminal with node. Answer the question prompts. 
+    Answer the question prompt to create a readme file for your project
 
   ## Contribution
-  No guideline to contribute at this time.
+  No guideline for contribution at this time
 
   ## Testing
-  Clone the repo and run the index with Node.js
+  Follow the installation steps and how to
   
   ## License
   [License: MIT](https://opensource.org/licenses/MIT)
