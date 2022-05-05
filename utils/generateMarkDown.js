@@ -32,8 +32,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `[License: ${license}]
-      (${renderLicenseLink(license)})`;
+    return `[License: ${license}](${renderLicenseLink(license)})`;
   }
   return "";
 };
